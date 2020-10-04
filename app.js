@@ -1,6 +1,6 @@
 const userInput = document.getElementById("number-jokes");
 document.getElementById("btn").addEventListener("click", () => {
-  fetch(`http://api.icndb.com/jokes/random/${userInput.value}`, {
+  fetch(`https://api.icndb.com/jokes/random/${userInput.value}`, {
     method: "GET", // or 'PUT'
   })
     .then((response) => response.json())
